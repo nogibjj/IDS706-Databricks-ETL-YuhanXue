@@ -8,7 +8,8 @@ import base64
 load_dotenv()
 server_h = os.getenv("SERVER_HOSTNAME")
 access_token = os.getenv("ACCESS_TOKEN")
-FILESTORE_PATH = "dbfs:/FileStore/individual_3"
+print(server_h, access_token)
+FILESTORE_PATH = "dbfs:/FileStore/IDS706-Databricks-ETL-YuhanXue"
 headers = {'Authorization': 'Bearer %s' % access_token}
 url = "https://"+server_h+"/api/2.0"
 
@@ -65,8 +66,10 @@ def put_file_from_url(url, dbfs_path, overwrite, headers):
 
 
 def extract(
-        url="""https://github.com/fivethirtyeight/data/blob/master/airline-safety/airline-safety.csv?raw=true""",
-        file_path=FILESTORE_PATH+"/airline-safety.csv",
+        url="""https://github.com/fivethirtyeight/data/blob/master/college-majors/grad-students.csv?raw=True""",
+        url2="""https://github.com/fivethirtyeight/data/blob/master/college-majors/majors-list.csv?raw=True""",
+        file_path=FILESTORE_PATH+"/grad-students.csv",
+        file_path2=FILESTORE_PATH+"/majors-list.csv",
         directory=FILESTORE_PATH,
         overwrite=True
 ):
@@ -75,8 +78,9 @@ def extract(
     mkdirs(path=directory, headers=headers)
     # Add the csv files, no need to check if it exists or not
     put_file_from_url(url, file_path, overwrite, headers=headers)
+    put_file_from_url(url2, file_path2, overwrite, headers=headers)
 
-    return file_path
+    return file_path, file_path2
 
 if __name__ == "__main__":
     extract()

@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-access_token = os.getenv("TOKEN")
+access_token = os.getenv("ACCESS_TOKEN")
 job_id = os.getenv("JOB_ID")
 server_h = os.getenv("SERVER_HOSTNAME")
 

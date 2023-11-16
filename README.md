@@ -46,5 +46,7 @@ The following video demonstrates how the entire ETL process works:
 
 ## Resources
 [https://hypercodelab.com/docs/spark/databricks-platform/global-env-variables/](https://hypercodelab.com/docs/spark/databricks-platform/global-env-variables/)
+
 [https://learn.microsoft.com/en-us/azure/databricks/delta/](https://learn.microsoft.com/en-us/azure/databricks/delta/)
+
 [https://docs.databricks.com/en/dbfs/filestore.html](https://docs.databricks.com/en/dbfs/filestore.html)

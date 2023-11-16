@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "SERVER_HOSTNAME=${{ secrets.SERVER_HOSTNAME }}" >> $GITHUB_ENV
           echo "JOB_ID=${{ secrets.JOB_ID }}" >> $GITHUB_ENV
-          echo "TOKEN=${{ secrets.ACCESS_TOKEN }}" >> $GITHUB_ENV
+          echo "ACCESS_TOKEN=${{ secrets.ACCESS_TOKEN }}" >> $GITHUB_ENV
       - name: install packages
         run: make install
       - name: lint

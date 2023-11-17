@@ -1,6 +1,6 @@
 # IDS706-Databricks-ETL-YuhanXue
 
-https://github.com/nogibjj/IDS706-Databricks-ETL-YuhanXue/actions/workflows/cicd.yml/badge.svg
+![CICD](https://github.com/nogibjj/IDS706-Databricks-ETL-YuhanXue/actions/workflows/cicd.yml/badge.svg)
 
 
 This repository contains the source codes for individual project 3.

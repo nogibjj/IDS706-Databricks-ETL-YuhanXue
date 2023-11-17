@@ -11,7 +11,7 @@ The following two datasets are used:
 1. [Major List](https://github.com/fivethirtyeight/data/blob/master/college-majors/majors-list.csv). This table contains a list of majors and their corresponding categories.
 2. [Students](https://github.com/fivethirtyeight/data/blob/master/college-majors/grad-students.csv). This table contains statistics of the graduated students from each major (e.g. employment rate, median of salaries, etc.). 
 
-In this project, we build a Databrick ETL pipeline to analyze the most popular majors (with largest number of graduates) and show their employment rate. 
+In this project, I build a Databrick ETL pipeline to analyze the most popular majors (with largest number of graduates) and show their employment rate. 
 
 ## Key Files
 1. `mylib/extract.py`: extract the data from its original source and store it in DBFS using csv format.

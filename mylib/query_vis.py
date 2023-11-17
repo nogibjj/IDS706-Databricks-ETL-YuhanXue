@@ -59,15 +59,6 @@ def vis():
     plt.xticks(rotation=45)
     plt.show()
 
-    # Plot a single histogram for all groups
-    # plt.figure(figsize=(15, 8))
-    # plt.hist(pandas_df["avg_soccer_power_in_613"], bins=20, edgecolor='black')  
-    # # Adjust the number of bins as needed
-    # plt.title("Avg Soccer Power in Group by Group on 613")
-    # plt.xlabel("Group")
-    # plt.ylabel("Avg Soccer Power in Group")
-    # plt.show()
-
 
 if __name__ == "__main__":
     query_transform()
